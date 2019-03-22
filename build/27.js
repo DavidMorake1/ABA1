@@ -115,17 +115,17 @@ var CoreLoginSitePage = /** @class */ (function () {
         this.showKeyboard = false;
         this.filter = '';
         this.showKeyboard = !!navParams.get('showKeyboard');
-        var url = 'https://abc.andrewbiggs.com';
+        var url = '';
         // Load fixed sites if they're set.
-        if (this.loginHelper.hasSeveralFixedSites("https://abc.andrewbiggs.com")) {
-            this.fixedSites = this.loginHelper.getFixedSites("https://abc.andrewbiggs.com");
+        if (this.loginHelper.hasSeveralFixedSites()) {
+            this.fixedSites = this.loginHelper.getFixedSites();
             this.fixedDisplay = __WEBPACK_IMPORTED_MODULE_5__configconstants__["a" /* CoreConfigConstants */].multisitesdisplay;
             // Autoselect if not defined.
             if (['list', 'select', 'buttons'].indexOf(this.fixedDisplay) < 0) {
                 this.fixedDisplay = this.fixedSites.length > 8 ? 'list' : (this.fixedSites.length > 3 ? 'select' : 'buttons');
             }
             this.filteredSites = this.fixedSites;
-            url = this.fixedSites[1].url;
+            url = this.fixedSites[0].url;
         }
         this.siteForm = fb.group({
             siteUrl: [url, __WEBPACK_IMPORTED_MODULE_7__angular_forms__["h" /* Validators */].required]
