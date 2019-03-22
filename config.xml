@@ -9,11 +9,11 @@
     <name>Andrew Biggs Academy</name>
 
     <description>
-        Moodle official app
+        Andrew Biggs Academy official app
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
-        Moodle Mobile team
+    <author href="http://azurite.co.za" email="hello@azurite.co.za">
+        Azurite Holdings
     </author>
 
     <edit-config target="CFBundleShortVersionString" file="*-Info.plist" mode="merge">
