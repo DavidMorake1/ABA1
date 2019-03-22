@@ -138,8 +138,8 @@ var CoreLoginReconnectPage = /** @class */ (function () {
                 avatar: site.infos.userpictureurl
             };
             _this.username = site.infos.username;
-          //  _this.siteUrl = site.infos.siteurl;
-          //  _this.siteName = site.infos.sitename;
+            _this.siteUrl = site.infos.siteurl;
+            _this.siteName = site.infos.sitename;
             // Check logoURL if user avatar is not set.
             if (_this.site.avatar.startsWith(site.infos.siteurl + '/theme/image.php')) {
                 _this.site.avatar = false;
