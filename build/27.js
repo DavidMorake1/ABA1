@@ -115,7 +115,7 @@ var CoreLoginSitePage = /** @class */ (function () {
         this.showKeyboard = false;
         this.filter = '';
         this.showKeyboard = !!navParams.get('showKeyboard');
-        var url = '';
+        var url = 'https://abc.andrewbiggs.com';
         // Load fixed sites if they're set.
         if (this.loginHelper.hasSeveralFixedSites()) {
             this.fixedSites = this.loginHelper.getFixedSites();
