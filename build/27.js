@@ -118,7 +118,7 @@ var CoreLoginSitePage = /** @class */ (function () {
         var url = 'https://abc.andrewbiggs.com';
         // Load fixed sites if they're set.
         if (this.loginHelper.hasSeveralFixedSites()) {
-            this.fixedSites = this.loginHelper.getFixedSites();
+            this.fixedSites = this.loginHelper.getFixedSites('https://abc.andrewbiggs.com');
             this.fixedDisplay = __WEBPACK_IMPORTED_MODULE_5__configconstants__["a" /* CoreConfigConstants */].multisitesdisplay;
             // Autoselect if not defined.
             if (['list', 'select', 'buttons'].indexOf(this.fixedDisplay) < 0) {
