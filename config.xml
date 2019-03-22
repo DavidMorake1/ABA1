@@ -68,7 +68,7 @@
     <preference name="AndroidPersistentFileLocation"    value="Compatibility" />
     <preference name="iosPersistentFileLocation"        value="Compatibility" />
 
-    <icon src="icon.png" />
+    <icon src="icon.jpg" />
     <gap:splash src="splash.png" />
 
     <platform name="android">
